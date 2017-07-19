@@ -2,7 +2,7 @@
 #include <stdio.h> 
 
 void print_leading_blocks(int number_to_print, int number_of_spaces);
-void print_trailing_blocks(int number_to_print, int number_of_spaces);
+void print_trailing_blocks(int number_to_print);
 
 int main() {
     
@@ -19,7 +19,7 @@ int main() {
     for(int height = 1; height < number_of_lines + 1; height++){
         print_leading_blocks(height, number_of_lines - height);
         printf(" ");
-        print_trailing_blocks(number_of_lines - height, height);
+        print_trailing_blocks(height);
         printf("\n");
     }
 }
@@ -33,11 +33,8 @@ void print_leading_blocks(int number_to_print, int number_of_spaces){
     }
 }
 
-void print_trailing_blocks(int number_to_print, int number_of_spaces){
-        for(int i = 0; i < number_of_spaces; i++){
-        printf("#");
-    }
+void print_trailing_blocks(int number_to_print){
     for(int i = 0; i < number_to_print; i++){
-        printf(" ");
+        printf("#");
     }
 }
