@@ -10,15 +10,15 @@ int main() {
     int number_of_lines = 0;
     do{
         number_of_lines = get_int();
-        if(number_of_lines < 1 || number_of_lines > 23){
+        if(number_of_lines < 0 || number_of_lines > 23){
             printf("No, stop it.  For real this time.\n");
         }
     }
-    while(number_of_lines < 1 || number_of_lines > 23);
+    while(number_of_lines < 0 || number_of_lines > 23);
     
     for(int height = 1; height < number_of_lines + 1; height++){
         print_leading_blocks(height, number_of_lines - height);
-        printf(" ");
+        printf("  ");
         print_trailing_blocks(height);
         printf("\n");
     }
