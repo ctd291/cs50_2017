@@ -7,9 +7,11 @@ void print_trailing_blocks(int number_to_print);
 int main() {
     
     // Get number of lines from the user
+    printf("What's your height, buddy?\n");
     int number_of_lines = 0;
     do{
         number_of_lines = get_int();
+        if(number_of_lines == 0){ exit(0);}
         if(number_of_lines < 1 || number_of_lines > 23){
             printf("No, stop it.  For real this time.\n");
         }
