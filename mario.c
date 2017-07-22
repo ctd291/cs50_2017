@@ -28,7 +28,7 @@ int main() {
 
 void print_leading_blocks(int number_to_print, int number_of_spaces){
     for(int i = 0; i < number_of_spaces; i++){
-        printf(" ");
+        printf("  ");
     }
     for(int i = 0; i < number_to_print; i++){
         printf("#");
