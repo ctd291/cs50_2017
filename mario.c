@@ -7,7 +7,7 @@ void print_trailing_blocks(int number_to_print);
 int main() {
     
     // Get number of lines from the user
-    int number_of_lines = 0;
+    int number_of_lines = 0;sdfsdfsddfs
     do{
         number_of_lines = get_int();
         if(number_of_lines < 1 || number_of_lines > 23){
